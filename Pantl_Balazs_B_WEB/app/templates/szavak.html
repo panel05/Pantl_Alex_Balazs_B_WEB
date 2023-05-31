@@ -21,7 +21,7 @@
                 {% for field in szavakFilter.form %}
                     {{ field }}
                 {% endfor %}
-                <a href="tema.html"><input class="btn btn-secondary mt-3" type="submit" value="Keresés"></a>
+                <a href={% url 'tema.html' %}><input class="btn btn-secondary mt-3" type="submit" value="Keresés"></a>
             </form>
         </article>
         <aside>
