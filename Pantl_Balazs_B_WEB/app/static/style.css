@@ -1,0 +1,45 @@
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+aside, article{
+    max-width: 100%;
+    margin: auto;
+}
+
+
+.szavak-tábla{
+    overflow-x: auto;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table tr:nth-child(odd){
+    background-color: antiquewhite;
+}
+
+table tr th, table tr td{
+    padding: 5px;
+}
+
+@media only screen and (max-width:800px){
+    main{
+        width: 50%;
+        margin: auto;
+    }
+    aside, article{
+        max-width: 100%;
+        margin: auto;
+    }
+
+    table{
+        max-width: 100%;
+        margin: auto;
+    }
+}
