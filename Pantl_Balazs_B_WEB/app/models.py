@@ -1,7 +1,7 @@
 from django.db import models
 
 class Tema(models.Model):
-    tema_id = models.AutoField(primary_key=True, editable= False)
+    temaId = models.AutoField(primary_key=True, editable= False)
     temanev = models.CharField(verbose_name="temanev", max_length=50)
 
     def __str__(self):

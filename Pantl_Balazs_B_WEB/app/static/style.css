@@ -39,7 +39,7 @@ table tr th, table tr td{
     }
 
     table{
-        max-width: 100%;
-        margin: auto;
+        display: flex;
+        flex-direction: row;
     }
 }

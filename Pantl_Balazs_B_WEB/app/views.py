@@ -17,3 +17,14 @@ def szavak(request):
     }
 
     return render(request, 'szavak.html', context=context)
+
+
+def tema(request, temaId):
+    Szavak.objects.filter(Tema__temaId = temaId)
+
+    context = {
+        'tema' : tema,
+        'szavak' : szavak
+    }
+
+    return render(request,"app/tema.html", context=context)
